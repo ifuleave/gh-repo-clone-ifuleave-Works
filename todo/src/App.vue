@@ -9,8 +9,8 @@
         <template v-for="todo in activeTodoList" v-bind:key="todo"><!--state 값이 active인 항목만 넘겨줌-->
           <todo
             :label="todo.label"
-            @componentClick="toggleTodoState(todo)"
-          />
+            @componentClick="toggleTodoState(todo)" 
+          /><!--컴포넌트 분리하는 방법-->
       </template>
       </div>
         <div class="text-right">
